@@ -1,0 +1,890 @@
+date,city
+Grand Isle,8/24/17
+Baldwin,8/17/17
+Franklin,8/4/17
+Kittery,7/27/17
+Richmond,7/27/17
+Pownal,6/2/17
+Parsonsfield,4/28/17
+Orono,4/28/17
+Arundel,4/20/17
+Poland,4/20/17
+West Gardiner,4/13/17
+Exeter,4/7/17
+Orrington,4/7/17
+Lisbon,3/10/17
+Monson,3/10/17
+winter harbor,3/10/17
+Casco,3/10/17
+Swanville,2/22/17
+Hartford,2/22/17
+Kingfield,2/17/17
+Sidney,1/26/17
+Belfast,1/26/17
+Newport,12/15/16
+Freeport,12/5/16
+Winter Harbor,12/5/16
+Gorham,12/5/16
+Fairfield,12/5/16
+Scarborough,12/5/16
+Kittery area,12/5/16
+Stonington,12/5/16
+Augusta,11/11/16
+Bowdoinham,10/21/16
+South Berwick,10/11/16
+Poland,10/11/16
+Ellsworth,10/11/16
+Ellsworth,10/11/16
+Bucksport,10/11/16
+Pittsfield,10/11/16
+Cumberland Center,10/11/16
+Waterville,9/22/16
+Bangor,9/22/16
+Minot,9/30/16
+Farmington,9/22/16
+Scarborough,9/15/16
+Brooks,9/15/16
+South Berwick,9/15/16
+Gorham,8/25/16
+Small Point,6/2/17
+Corinna,8/25/16
+Sabattus,8/19/16
+Augusta,11/11/16
+Old Orchard Beach,8/4/16
+Poland,8/2/16
+Biddeford,8/2/16
+Bangor,7/22/16
+Fairfield,7/22/16
+Fairfield,7/22/16
+West Gardiner,7/15/16
+Bangor,7/15/16
+Richmond,7/15/16
+Palermo,7/8/16
+Westbrook,7/8/16
+Ogunquit,7/22/16
+Guilford,7/8/16
+Portland,7/8/16
+Brunswick,6/16/16
+Carmel,6/16/16
+South Berwick,6/10/16
+South Berwick,6/10/16
+Scarborough,6/1/16
+North Berwick,6/1/16
+Troy,6/1/16
+Kittery,5/20/16
+Carrabassett Valley,5/20/16
+Sabattus,5/6/16
+E. Parsonsfield,4/22/16
+South Portland,4/15/16
+Chesterville,4/1/16
+Bridgton,4/1/16
+Bridgton,3/18/16
+Cumberland Center,3/23/17
+Poland,3/4/16
+York,2/11/16
+Carmel,2/4/16
+Dixmont,1/14/16
+Holden,1/8/16
+Eliot,1/8/16
+Scarborough,1/8/16
+Blue Hill,1/5/16
+Scarborough,1/5/16
+Newburgh,1/5/16
+Gorham,1/5/16
+Newburgh,4/7/17
+Prospect,12/10/15
+Augusta,11/26/15
+Gardiner/Pittston,11/19/15
+Hollis,11/6/15
+Gardner,11/6/15
+Hollis,11/6/15
+Lewiston,11/6/15
+Damariscotta,11/6/15
+Bethel,10/29/15
+Thorndike,10/16/15
+Biddeford,10/9/15
+York,9/29/15
+Peaks Island,9/29/15
+Waldoboro,9/17/15
+Old Orchard Beach,9/17/15
+Winslow,9/11/15
+New Gloucester,9/11/15
+Bridgton,9/2/15
+Gorham,9/11/15
+York,8/27/15
+York,8/27/15
+Hollis Center,8/27/15
+Scarborough,8/27/15
+Centerville,8/6/15
+Scarborough,8/6/15
+Windham,8/6/15
+Cumberland,7/31/15
+Topsham,7/23/15
+Auburn,8/6/15
+Lamoine,7/17/15
+Newport,7/10/15
+Portland,7/6/15
+Topsfield,7/10/15
+Westbrook,2/26/16
+Old Orchard Beach,7/6/15
+Sanford,6/24/15
+Sanford,6/19/15
+Cornish,6/19/15
+Falmouth,6/15/15
+Rockland,7/3/15
+Medford,6/5/15
+Exeter,6/5/15
+Searsport,5/29/15
+Sanford,5/13/15
+Bangor,5/8/15
+Newport,4/17/15
+Ellsworth,4/8/15
+Bangor,4/3/15
+Bangor,4/17/15
+St. George,3/20/15
+Unspecified,9/25/15
+Augusta,3/13/15
+Sullivan,3/6/15
+Jefferson,3/6/15
+Otter Creek,1/30/15
+Orrington,1/30/15
+Portland,1/7/15
+Brewer,1/7/15
+Bangor,12/22/14
+Shapleigh,11/21/14
+Stoneham,11/6/14
+Eddington,11/6/14
+Bangor,11/6/14
+Bangor,11/6/14
+Kittery,11/6/14
+East Wilton,11/6/14
+Augusta,11/6/14
+Raymond,11/6/14
+Greenville,11/6/14
+Auburn,11/6/14
+Gray,10/3/14
+Robbinston,10/3/14
+Buxton,9/18/14
+Farmington,9/18/14
+Westnewfield,9/10/14
+Saint Paul,8/31/14
+Portland,8/29/14
+Morrill,8/29/14
+Georgetown,8/22/14
+Franklin,8/8/14
+Kittery Point,8/15/14
+Cape Neddick,7/20/14
+Rockland,7/20/14
+Litchfield,7/20/14
+Biddeford,7/26/14
+Kittery,1/9/15
+Cape Neddick,6/24/14
+Fryeburg,7/11/14
+Lewiston,6/24/15
+Falmouth,6/20/14
+Phillips,6/4/14
+North Waterboro,6/4/14
+Cape Neddick,6/4/14
+Jefferson,4/11/14
+Jefferson,4/4/14
+Unity,6/6/14
+Rockland,4/4/14
+Portland,3/18/14
+Gorham,3/18/14
+Saco,3/18/14
+Wilton,2/27/14
+Biddeford,2/14/14
+Downeast,2/7/14
+Hermon,1/30/14
+Saco,1/24/14
+New Sharon,1/16/14
+New Sharon,1/16/14
+Blue Hill,1/10/14
+Gorham,1/10/14
+Washington,1/10/14
+Mercer,12/2/13
+Ashland,1/16/14
+Holden,12/2/13
+Farmington,11/20/13
+Ellsworth,11/20/13
+Deer Isle,11/11/13
+Falmouth,11/11/13
+Norridgewock,11/11/13
+Bowdoinham,10/23/13
+Orrington,10/3/13
+North Berwick,10/3/13
+Albion,9/30/13
+Bar Harbor,9/30/13
+North Wayne,9/30/13
+Auburn,9/30/13
+Kennebunkport,9/30/13
+Gorham,9/30/13
+Newcastle,9/30/13
+Lincolnville,12/12/13
+Gorham,9/30/13
+Maine (southeast),9/9/13
+Searsmont,9/9/13
+Falmouth,9/9/13
+Falmouth,9/9/13
+Columbia,9/9/13
+St. Agatha,8/30/13
+Livermore Falls,8/30/13
+South Portland,8/30/13
+North Berwick,8/30/13
+Ellsworth,8/30/13
+Clinton,8/30/13
+Waldoboro,8/30/13
+Dover/Foxcroft,8/30/13
+Kennebunk,8/30/13
+Amherst,8/30/13
+Holden,8/30/13
+Auburn,8/30/13
+Wiscasset,8/30/13
+Kittery,8/30/13
+Old Orchard Beach,8/30/13
+Portland,8/30/13
+York,8/30/13
+Lewiston,8/30/13
+Augusta,8/30/13
+Palmyra,8/30/13
+Lisbon Falls,8/30/13
+Bangor,8/30/13
+Orrington,8/30/13
+York,8/30/13
+Bailey Island,7/22/13
+York Beach,7/22/13
+Wells,7/14/13
+Portland,7/14/13
+New Sharon,7/14/13
+Turner,7/14/13
+Old Orchard Beach,7/5/13
+Portland,7/22/13
+Shapleigh,7/22/13
+Houlton,8/29/14
+Bangor,7/3/13
+Union,6/2/13
+Eddington,7/22/13
+Windham,5/15/13
+Acton,5/15/13
+Litchfield,5/15/13
+rte 9,5/15/13
+Patten,5/15/13
+Bangor,5/15/13
+Camden,5/15/13
+Solon,5/15/13
+,4/12/13
+Old Orchard Beach,5/15/13
+Piscataquis Co. (T9 R11 WELS),2/28/13
+Skowhegan,2/18/13
+Portland,12/23/13
+Hope,2/4/13
+Lewiston,2/4/13
+Greene/Lewiston,2/4/13
+Old Town,2/4/13
+Portland,2/4/13
+Ellsworth,2/4/13
+South berwick,2/4/13
+Gray,2/4/13
+Bangor,2/4/13
+Bridgton,2/4/13
+Lisbon Falls,12/21/12
+Lisbon Falls,12/21/12
+Portland,12/20/12
+Lewiston,12/20/12
+Litchfield,12/20/12
+Freeport,12/20/12
+Saco,12/20/12
+St. Albans,12/20/12
+Houlton,12/20/12
+Turner,11/19/12
+Eliot,12/20/12
+Standish,11/19/12
+Lewiston,11/19/12
+Kenduskeag,11/19/12
+Orono,11/19/12
+Lewiston,11/19/12
+Liberty,11/4/12
+Waterville,11/4/12
+Waterville,11/4/12
+Waterville,11/4/12
+Whiting,10/30/12
+Woolwich,10/30/12
+Endfield,10/30/12
+Orrington,11/4/12
+Turner,10/30/12
+Unity,10/30/12
+Machias,11/19/12
+Stockton Springs,10/30/12
+Shapleigh,10/30/12
+Augusta,10/30/12
+Freeport,10/30/12
+Augusta,10/30/12
+Augusta,10/30/12
+Wells,9/24/12
+Bangor,9/24/12
+Sebago,9/24/12
+Scarborough,9/24/12
+Lincolnville,12/12/13
+Waterville,9/24/12
+Woodville,9/24/12
+Waterville,9/24/12
+Macias,9/24/12
+York,11/4/12
+York,9/24/12
+Phillips,9/24/12
+York Beach,9/24/12
+Small Point,12/20/12
+Bar Harbor,8/19/12
+Old Orchard,8/19/12
+Parkman,8/19/12
+Bangor,8/19/12
+Pittsfield,8/19/12
+North Anson,8/19/12
+Old Orchard Beach,8/19/12
+Augusta,8/19/12
+Winthrop,8/19/12
+Bridgton,9/24/12
+Eastport,8/19/12
+Wells,8/19/12
+Cornish,8/5/12
+South Portland,8/5/12
+York Beach,8/5/12
+Greene,8/5/12
+Sanford,8/5/12
+Bangor,8/5/12
+Portland,8/5/12
+Portland,8/5/12
+Portage,8/5/12
+Portage,8/5/12
+Skowhegan,7/4/12
+Camden,7/4/12
+Camden,7/4/12
+Liberty,3/18/14
+Millinocket (near),7/4/12
+Millinocket,8/5/12
+Bangor,6/20/12
+Bath,5/29/12
+Newport,5/13/12
+Scarborough,5/13/12
+Scarborough,5/13/12
+Scarborough,5/13/12
+Harpswell,5/13/12
+Old Town,4/18/12
+New Sharon,4/18/12
+Seal Cove,5/13/12
+West Newfield,5/13/12
+Presque Isle,5/13/12
+Windham,3/13/12
+Loring,5/13/12
+Brighton Plantation,3/13/12
+North Berwick,3/13/12
+Charleston,3/13/12
+Gorham,2/3/12
+Wells,2/3/12
+Gorham,2/3/12
+Kennebunk,2/4/13
+Kennebunk,1/12/12
+Scarborough,1/12/12
+Readfield,1/12/12
+Auburn,12/17/11
+Saco,1/12/12
+Freeport,12/12/11
+Lebanon,12/12/11
+Turner,12/12/11
+Portland,12/12/11
+Turner,7/4/12
+Lyman,10/10/11
+Phillips,10/10/11
+Presque Isle,10/10/11
+Harrison,10/10/11
+Vassalboro,10/10/11
+Bernard,10/10/11
+Industry,10/10/11
+Portland,10/10/11
+Palermo,8/21/11
+Old orchard beach,8/21/11
+Kittery Point,2/10/12
+York,8/21/11
+York,8/21/11
+Orr's Island,8/21/11
+Winslow,8/21/11
+Winslow,8/7/11
+Poland,12/20/12
+Hartland,7/17/11
+York Beach,8/7/11
+Harrison,8/21/11
+New Sweden,7/6/11
+Waterville,7/4/11
+Saco,6/27/11
+Naples,3/13/12
+Portland,6/12/11
+Orland,5/29/11
+Charleston,5/12/11
+Belfast,5/2/11
+Richmond,5/2/11
+Woolwich,5/13/12
+Dayton,1/31/11
+Buxton,2/4/13
+Bailey Island,1/5/11
+Harrison,1/5/11
+Harrison,9/9/13
+Harrison,2/8/11
+New Sharon,11/21/10
+Woolwich,11/21/10
+Portland,11/21/10
+Kennebunkport,11/21/10
+Kennebunkport,11/21/10
+Wells,11/21/10
+York,11/21/10
+Eagle Lake,12/20/12
+Waterboro,8/24/10
+Falmouth,7/28/10
+Portland,7/19/10
+Rangeley,7/19/10
+Eastport,11/21/10
+Benton,7/6/10
+South Portland,6/23/10
+Westbrook,6/3/10
+Yarmouth,5/12/10
+Belmont,3/18/14
+Medway,4/13/10
+Cape Neddick,4/13/10
+Springvale,4/13/10
+Hancock,7/8/16
+Ellsworth,2/8/11
+Kennebunk Beach,2/14/10
+Bucksport,3/13/12
+Bucksport,3/13/12
+Vassalboro,12/12/09
+Cumberland to Freeport area,12/12/09
+Belgrade,12/12/09
+Litchfield,12/12/09
+Farmingdale,12/12/09
+Hampden,10/10/11
+Fryeburg,12/12/09
+Deer Isle,12/12/09
+Cape Elizabeth,12/12/09
+Berwick,12/12/09
+Sanford,12/12/09
+Lisbon,12/12/09
+Lovell,12/12/09
+Waterville,12/12/09
+Lyman,12/12/09
+Wells,12/12/09
+Bangor,12/12/09
+Orient,8/27/09
+Sorento (near),8/27/09
+Cross Lake,8/27/09
+Alfred,8/27/09
+Raymond,12/5/16
+Richmond,8/5/09
+Lincoln,12/12/11
+Pittsfield,8/5/09
+East Bethel,8/5/09
+Lisbon,6/9/09
+Winterport,6/9/09
+Lisbon,6/9/09
+Scarborough,6/9/09
+Corinth,8/5/09
+Portland,5/12/09
+Orono (University of Maine),5/12/09
+Washington,4/14/09
+Augusta,3/19/09
+Portland,4/14/09
+"Smyrna Mills/Oakfield/Island Falls, and Patten",3/19/09
+Wayne,3/19/09
+Newport,3/19/09
+Holden,3/19/09
+Poland,1/10/09
+Fort Fairfield,3/19/09
+South Hiram,1/10/09
+York (Cape Neddick),12/12/13
+Bangor,1/10/09
+New Gloucester,10/31/08
+New Gloucester,10/31/08
+Gardiner (near),10/31/08
+Starks,9/11/15
+Oakland,10/31/08
+East Machias,10/31/08
+Bar Harbor,6/2/13
+Portland,10/31/08
+Sabattus,8/12/08
+Sangerville,8/12/08
+Rockland,8/12/08
+North Haven,8/12/08
+Sebago,8/12/08
+Gray,7/5/08
+Scarborough,6/12/08
+Augusta,6/12/08
+Gray,5/15/13
+Cape Elizabeth,1/10/09
+Bethel,3/4/08
+Presque Isle,2/14/08
+Freeport,1/21/08
+Leeds,1/21/08
+Phippsburg,1/21/08
+Farmington,3/4/08
+Otis,11/28/07
+Bucksport,11/28/07
+Lubec,11/28/07
+York,4/17/08
+Dexter (in southern sky),10/8/07
+Mars Hill,10/8/07
+Bath,10/8/07
+Lewiston,8/14/07
+Lewiston,8/14/07
+Hancock,10/8/07
+Canaan,10/8/07
+Greenville,10/8/07
+Damariscotta,8/7/07
+St. George,8/7/07
+Portland,6/12/07
+Mdison,3/8/07
+West Paris,2/24/07
+Kingfield,2/24/07
+Baltimore,2/24/07
+Bowdoinham,2/24/07
+Stockton Springs,2/1/07
+Poland,2/1/07
+Hampden,2/1/07
+Warren,3/8/07
+Auburn,12/7/06
+Pittsfield,10/30/06
+Ogunquit,12/7/06
+Brewer,12/7/06
+York,10/30/06
+Scarborough,10/30/06
+None,10/30/06
+Bangor,10/30/06
+Caribou,2/28/13
+Hampden,10/30/06
+Berwick,10/30/06
+Berwick,12/7/06
+Lincolnville,10/30/06
+West Gardiner,10/30/06
+Concordville (York Beach Area),10/30/06
+Windham,5/15/06
+Brunswick,5/15/06
+Sanford,5/15/06
+Augusta,5/15/06
+Warren,3/11/06
+Brunswick,2/14/06
+Clinton,2/14/06
+Freeport,2/14/06
+Crosslake,2/14/06
+Cumberland,2/14/06
+Bangor,5/15/06
+Lewiston,12/16/05
+West Paris,10/11/05
+Rumford,10/11/05
+South Berwick,2/14/06
+Oakland,2/24/07
+Skowhegan,9/2/05
+Berwick,10/11/05
+Brunswick,9/2/05
+Porter,9/2/05
+Brunswick (Mere Point Bay),7/13/05
+Freeport,7/13/05
+Westbrook,7/5/05
+East Millinocket,11/28/07
+Greene/Lewiston,3/27/14
+Cumberland,5/11/05
+Waterboro,5/11/05
+Kennebunk,5/11/05
+Deer Isle,1/21/08
+Deer Isle,12/14/06
+Lewiston,5/11/05
+Auburn/Lewiston,4/16/05
+Kennebec,5/11/05
+Portland,2/22/05
+Orono,11/2/04
+Lewiston,10/27/04
+Hampden,10/27/04
+Portland,10/27/04
+Limerick,10/27/04
+Lewiston,9/29/04
+Rockland,10/27/04
+Embden,12/3/04
+Piscataquis County,9/1/04
+Lovell,8/24/04
+Palermo,8/24/04
+Brewer,7/8/04
+Belfast,4/27/04
+Maine (location unspecified),4/27/04
+Auburn,2/12/04
+Ogunquit,1/31/04
+Lagrange,1/17/04
+Grand Isle,1/17/04
+Grand Isle,1/17/04
+Portland,3/2/04
+Scarborough,10/20/05
+Brunswick,11/26/03
+Waterville,11/26/03
+Appleton (near),11/26/03
+Boothbay Harbor,11/26/03
+Boothbay Harbor,11/26/03
+Boothbay Harbor,11/26/03
+Portland,11/26/03
+Augusta,11/11/03
+Kittery,11/8/03
+Monson,10/31/03
+Saco,10/7/03
+Auburn,9/24/03
+Waterville,9/17/03
+Carrabasset Valley,9/9/03
+Yarmouth,9/4/03
+Yarmouth,9/4/03
+Mt. Katahdin area,4/9/04
+Glenburn,9/4/03
+Alfred,7/16/06
+Millinocket,3/8/07
+Maine (northern part),8/28/03
+Biddeford,7/16/03
+Dixfield,3/11/06
+Limington/Naples,6/3/03
+Naples,6/3/03
+Old Town (Indian Island),4/27/03
+Windham,3/11/03
+South Paris,3/4/03
+Gorham,3/4/03
+Old Town,3/4/03
+Holden,3/4/03
+Holden,3/4/03
+Bangor,12/23/02
+Augusta,5/15/06
+Caribou,2/14/06
+Guilford/Abbot,4/27/03
+Scarborough,9/19/02
+Richmond,9/6/02
+Hebron,9/6/02
+Poland,8/28/02
+Bingham,8/28/02
+Eastport,7/3/13
+Leeds,7/16/06
+Brunswick,8/16/02
+Waterford,8/28/02
+Skowhegan,8/28/02
+Gardiner,8/16/02
+Fairfeild,8/16/02
+Pittsfield,4/22/03
+Bangor,7/26/02
+Portland,7/26/02
+Naples,7/26/02
+South Paris,7/26/02
+Waterville,7/16/03
+Yarmouth,7/1/02
+Yarmouth,6/12/02
+Naples,4/8/02
+Hartland,5/14/02
+Harpswell,3/19/02
+Penobscot,3/17/04
+Richmond/Bowdoin,1/11/02
+Farmington (?),12/5/01
+Bangor,11/20/01
+Greene,10/12/01
+Sabattus,3/19/02
+Bar Harbor,5/24/05
+Greene,10/12/01
+Vassalboro,10/12/01
+Oxford,10/12/01
+Kennebunk,10/12/01
+Sabattus,10/12/01
+Litchfield,10/12/01
+Lewiston,9/17/03
+Camden,12/5/01
+Oakland (Near),8/20/01
+Rockport,8/5/01
+Old Orchard Beach,8/5/01
+Framingdale,10/15/02
+Owls Head,5/24/05
+Cumbrland,2/18/01
+Waldoboro,2/18/01
+North Whitefield,1/3/01
+Saco,1/3/01
+Kittery,8/5/01
+Hartford,11/6/14
+Sidney,12/2/00
+Portland,12/2/00
+Portland,12/2/00
+Lamoine,12/2/00
+Portland,10/7/03
+Lewiston,9/17/00
+Presque Isle,8/5/01
+West Gardiner,7/5/08
+Stetson,8/5/01
+Benedicta,2/24/07
+Lewiston,5/3/00
+Owls Head,6/20/05
+Norridgewock (Winding Hill Rd),4/1/00
+Freedom,3/16/00
+Vassalboro,4/1/00
+Portland,4/15/00
+Skowhegan,1/22/00
+Sanford,2/18/01
+South Berwick,1/7/00
+Naples,12/16/99
+Raymond,11/23/99
+Fairfield,11/2/99
+Anson,10/19/99
+East Machias,11/26/03
+Bath,2/14/10
+Portland (@ the Holiday Inn),3/16/00
+Bath,10/20/05
+West Kennebunk,9/2/05
+Macwahoc,8/30/99
+South China,9/12/99
+Oxford,2/1/07
+Ashland,7/5/99
+Bangor,7/25/04
+Belfast,4/2/99
+Bangor/Falmoth (Between),5/24/99
+Ogunquit,11/19/98
+Lewiston,1/28/99
+Bar Harbor (Bar Island Crossover),11/1/98
+Ft. Fairfield,3/4/03
+East Machias,11/1/98
+Portland,11/21/98
+Portland,5/15/06
+Lewiston (In Maine near),12/2/00
+Westbrook,5/24/99
+Machias,8/16/02
+Winslow,12/2/00
+Gardiner,1/28/99
+Bar Harbor,1/28/99
+Pittsfield,1/28/99
+Bangor,1/28/99
+Beals,1/28/99
+Gardiner,1/28/99
+Albany,2/1/07
+Fort Fairfield,3/18/16
+Livermore Falls,1/17/04
+Loring AFB,2/14/06
+Denmark,3/19/02
+Gorham,1/28/99
+N. Waterboro,2/16/99
+Swanville,1/28/99
+Newport,10/8/07
+Ellsworth,9/21/00
+Brunswick,5/24/99
+Topsham,10/3/14
+Phippsburg,6/12/07
+Eddington,4/22/03
+Ft Mead,7/5/99
+Sedgewick,11/2/99
+Biddeford,11/2/99
+York,11/2/99
+Yarmouth,11/2/99
+Troy,11/2/99
+Manchester,11/2/99
+Manchester,11/2/99
+Windham,2/4/13
+Shapleigh,11/2/99
+Brunswick,6/18/03
+Moosehead Lake,11/2/99
+Portland,6/12/08
+Lisbon,11/2/99
+Portland,3/10/11
+Woodland,11/2/99
+Augusta,11/2/99
+Harmony,11/2/99
+Auburn,11/2/99
+West South Port,11/2/99
+Gorham,11/2/99
+St. Agatha,11/6/14
+Belfast,10/19/99
+Macwahoc,8/30/99
+Sebago Lake,7/5/99
+Dresden,4/16/05
+Winslow,2/1/07
+Bethel (Albany Township),9/29/04
+Biddeford,4/28/01
+Clinton,12/16/05
+Limerick,2/14/08
+East Corinth,4/2/99
+Bangor,6/13/14
+Millinocket,5/24/05
+not shure,1/10/09
+East Winn/Winn.,2/16/99
+Limerick,5/24/05
+Hallowell,3/4/03
+North Windham,4/28/01
+Orrington,1/10/09
+Orono,11/26/03
+Lovell,8/12/08
+Patten,2/18/01
+Orono/Bangor,8/20/01
+New Gloucester,1/10/09
+Benton,8/12/01
+Brunswick,5/11/05
+Jackman,2/4/13
+Kittery,2/18/01
+Winslow,6/3/10
+Skowhegan,11/16/02
+Acton,4/2/99
+Caribou,8/7/07
+Alton,10/15/02
+Woolwich,11/28/07
+Southwest Harbor,10/23/13
+Lisbon Falls,2/18/01
+Jonesport,9/13/02
+Southwest Harbor,12/19/03
+Clinton,12/16/05
+Oldtown,2/14/06
+Houlton,11/9/99
+Cape Elizabeth (near; location unspecified by witness),5/15/06
+Richmond,4/18/12
+Baileyville,3/23/04
+Wells,10/30/06
+Eastport,2/22/05
+Caribou (rural Suburb of),8/30/99
+Portage Lake,8/12/01
+Winslow,2/1/07
+Limestone,1/28/99
+Charleston AFS,4/16/05
+St. Agatha,2/18/01
+Sebago,2/16/99
+Limestone (Loring AFB),12/14/06
+Limestone,6/12/08
+St. Agatha,8/24/04
+Scarborough,3/6/15
+Presque Isle,1/21/08
+York,10/20/05
+North Windham,2/18/01
+Caribou Maine,10/10/11
+Brooksville,8/5/12
+Madison,8/30/13
+South China (Three Mile Pond),7/4/12
+Kittery,3/7/98
+Bar Harbor,11/21/10
+Eddington,2/16/00
+Eddington,1/12/12
+Orono,5/8/14
+Dexter,1/28/99
+Enfield,4/16/05
+Loring AFB,11/28/07
+Kennebunkport,3/19/02
+Stillwater,5/15/13
+Caribou,8/5/01
+Brownville,4/27/04
+Ellsworth,2/10/17
+West Lake,1/17/04
+Bangor,12/12/09
+Bangor,11/21/10
+Bass Harbor,10/31/03
+Cape Rosier,3/19/09
+Waterville,10/7/03
+Vassalboro,12/2/00
+Waterville,3/7/98
+Portland,5/29/12
+East Vassalboro,2/1/07
+Vassalboro,6/12/07
+Gardner Lake (Extreme northeastern  US),9/12/99
+Scarborough,4/16/05
+Camden (Penobscot Bay),7/16/06
+Livermore Falls,2/4/13
+Glenburn,1/17/04
+Brunswick,3/9/04
+Norridgewock,12/2/00
+South Portland,6/12/08
+Solon,12/5/01
+Beals Island,10/20/05
