@@ -3,11 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>Data Visualization</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://d3js.org/topojson.v2.min.js"></script>
+  <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
 </head>
-<body>
-  <!-- < -->h1>Population by Year</h1> 
-  <!-- <ul></ul> -->
-  <script src="https://d3js.org/d3.v4.js"></script>
+<body class="chart">
+  <h1>UFO Sightings by State</h1>
+  <h3>
+    Total: <span id="total"></span>
+  </h3>
+  <svg width="960" height="500"></svg>
+  <h3>
+    Year: <span id="date"></span>
+  </h3>
+  <form>
+    <input id="year_slider" type="range" onchange="updateSlider(this.value)">
+  </form>
+  <div>
+    Adjust Year
+  </div>
+  <div class="tooltip">TOOLTIP</div>
+  <script src="states.py"></script>
+  <script src="years.py"></script>
   <script src="app.js"></script>
 </body>
 </html>

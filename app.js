@@ -1,222 +1,180 @@
 // Run this to test: python -m SimpleHTTPServer
-
 document.addEventListener("DOMContentLoaded", main);
 
 function main() {
-  var visData = [];
-  var width = 500;
-  var height = 500;
-  var xMin, xMax;
-  var yMin, yMax;
-  var xScale, yScale;
+  var allStatesObj = {};
+  // async calls to all csv files for reading
+  var promises = readIncidents(yearsDict);
+  Promise.all(promises).then(function(dataArray) {
+    // for each state, condense all incidents into year and total
+    for (data of dataArray) {
+      if (parseInt(data[1]) >= 1999)
+        allStatesObj[data[1]] = condenseIncidents(data[0]);
+    }
 
-  var svg = d3.select('svg')
-              .attr('width', width)
-              .attr('height', height);
+    // set up the slider that controls which year we are viewing
+    var slider = document.getElementById("year_slider");
+    slider.setAttribute("min", 0);
+    slider.setAttribute("max", dataArray.length-1);
+    slider.setAttribute("value", dataArray.length-1);
+    slider.setAttribute("steps", 1);
+    updateSlider(dataArray.length-1);
 
-  d3.csv("data/population.csv", row, function(error, data) {
-    if (error) throw error;
-    visData = data;
-    debugger;
-  });
+    // the initial chart should be set to 2017
+    initializeChart("2017");
 
-  svg.selectAll('circle')
-        .data(visData)
-        .enter()
-        .append('circle')
-        .attr('cx', (d) => d.year)
-        .attr('cy', (d) => d.population)
-        .attr('r', (d) => 10);
-
-  // SET THE xmin/max and ymin/max
-
-  xScale = d3.scaleLinear()
-                  .domain([xMin, xMax])
-                  .range([0, width]);
-
-  yScale = d3.scaleLinear()
-                  .domain([yMin, yMax])
-                  .range([0, width]);
-
+  }); // end promise.all
 }
 
-// row conversion function
-function row(d) {
-  return {
-    year: d.year,
-    population: d.population
+// this function condenses the state incidents and return
+//  a dictionary of states, each with dictionary containing years
+//  and the total incidents figures
+function readIncidents(state_data) {
+  var promises = [];
+  for (state in state_data) {
+    promises = promises.concat(new Promise(function(resolve, reject) {
+      // Grab the name of the current state with closure!
+      var innerState = state;
+      d3.csv("/data/" + state + ".csv", function(error, data) {
+        if (error){
+          console.log(state);
+          reject(error);
+        }
+        resolve([data, innerState])
+      });
+    }));
+  } 
+  return promises;
+}
+
+// the total incidents for every year are stored
+function condenseIncidents(dataArray) {
+  var total = 0;
+  
+  // loop through each incident and condense the information
+  for (var i = 0; i < dataArray.length; i++) {
+    // collect the total number of incidents for the state
+    total += parseInt(dataArray[i].total);    
   }
+  return total;
 }
 
-// Removing elements
+// every time the chart is initialized, we rebuild the whole svg
+// OPTIMIZE: It would be nice to make it only rebuild the bars. Time permitting...
+function initializeChart(year) {
+  // clear out the old svg so we don't draw over it
+  d3.select("svg").select("g").remove();
+  
+  // select the current svg and create the position variables
+  var svg = d3.select("svg"),
+      margin = {top: 20, right: 20, bottom: 30, left: 40},
+      width = +svg.attr("width") - margin.left - margin.right,
+      height = +svg.attr("height") - margin.top - margin.bottom;
 
- // var todos = [
- //    "Create 1000 data visualizations with d3",
- //    "Eat dinner",
- //    "Sleep",
- //    "Hang out with friends"
- //  ];
+  // x and y scale functions to help with the bar scaling both horiz and vert
+  var x = d3.scaleBand().rangeRound([0, width]).padding(0.1),
+      y = d3.scaleLinear().rangeRound([height, 0]);
 
- //  d3.select("ul")
- //    .selectAll("li")
- //      .data(todos)
- //      .enter()
- //    .append("li")
- //      .text(function(d,i) {
- //        return "Todo #" + (i + 1) + ": " + d;
- //      });
+  // the container object for the entire graphic we're creating
+  var g = svg.append("g")
+      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
- //  d3.selectAll('li').on('click', function(d) {
- //    // find the current todo's index in the array and remove it
- //    var idx = todos.indexOf(d);
- //    todos.splice(idx,1)
+  var counter = 0; // creates ids for the states for later use
+  var yearTotal = 0;
+  
+  d3.csv(`data/${year}.csv`, function(d) {
+    d.id = counter++;
+    d.abbr = states[d.state];
+    d.total = +d.total;
+    yearTotal += d.total;
+    return d;
+  }, function(error, data) {
+    var minTotal = d3.min(data, function(d) { return d.total; });
+    var maxTotal = d3.max(data, function(d) { return d.total; });
+    x.domain(data.map(function(d) { return d.abbr; }));
+    y.domain([0, maxTotal]);
 
- //    // Update the DOM
- //    d3.selectAll('li')
- //      .data(todos)
- //        .text(function(d,i) {
- //          return "Todo #" + (i + 1) + ": " + d;
- //        })
- //      .exit()
- //      .remove();
- //  });
+    var keyRange = d3.range(0, maxTotal, maxTotal/10)
 
+    var color = d3.scaleSequential(d3.interpolateReds)
+        .domain([-maxTotal * 0.25, maxTotal]);
 
-// BAR CHART
+    // set up the color key rectangle
+    g.selectAll(".keys")
+        .data(keyRange)
+        .enter()
+        .append("rect")
+        .attr("x", (d,i)=>(width*.75)+(i*10))
+        .attr("y", 0)
+        .attr("height", 10)
+        .attr("width", 10)
+        .attr("fill", (d)=>color(d))
+        .attr("stroke", "gray");
 
-// var svgWidth = 500;
-//   var svgHeight = 500;
-//   var barWidth = 90;
-//   var barGap = 10;
+    // create the text label for the color key
+    g.append("text")
+        .attr("class", "caption")
+        .attr("x", width*.75)
+        .attr("y", -8)
+        .attr("fill", "#000")
+        .attr("text-anchor", "start")
+        .attr("font-weight", "bold")
+        .attr("font-size", "12px")
+        .text("Range: " + minTotal + " - " + maxTotal);
 
-//   d3.select('body')
-//     .append('svg')
-//       .attr('width', svgWidth)
-//       .attr('height', svgHeight)
-//     .selectAll('rect')
-//       .data([
-//         svgHeight * Math.random(),
-//         svgHeight * Math.random(),
-//         svgHeight * Math.random(),
-//         svgHeight * Math.random(),
-//         svgHeight * Math.random()
-//       ])
-//       .enter()
-//     .append('rect')
-//       .attr('width', barWidth)
-//       .attr('height', (d) => d)
-//       .attr('y', (d) => svgHeight - d)
-//       .attr('x', (d,i) => (barWidth + barGap) * i)
-//       .attr('fill', 'blue');
+    g.append("g")
+        .attr("class", "axis axis--x")
+        .attr("transform", "translate(0," + height + ")")
+        .call(d3.axisBottom(x));
+  
+    g.append("g")
+          .attr("class", "axis axis--y")
+          .call(d3.axisLeft(y).ticks(20))
+        .append("text")
+          .attr("transform", "rotate(-90)")
+          .attr("y", 6)
+          .attr("dy", "0.71em")
+          .attr("text-anchor", "end")
+          .text("Reports")
 
+    g.selectAll(".bar")
+      .data(data)
+      .enter()
+      .append("rect")
+        .attr("fill", function(d) { return color(d.total); })
+        .attr("class", "bar")
+        .attr("x", function(d) { return x(d.abbr); })
+        .attr("y", height)
+        .attr("width", 12)
+        .attr("height", 0)
+        .on("mousemove", showToolTip)
+        .on("mouseout", hideToolTip)
+        .transition()
+        .duration(500)
+        .attr("y", function(d) { return y(d.total); })
+        .attr("height", function(d) { return height - y(d.total); })
 
+        document.getElementById("date").innerText = year;
+        document.getElementById("total").innerText = yearTotal;
+  });
+}
 
+// the year selection slider re-initializes the whole SVG 
+function updateSlider(value) {
+  initializeChart(yearsArr[value]);
+}
 
+// FIX: show the tooltip near the mouse when a bar is moused through
+function showToolTip(d) {
+  d3.select(".tooltip")
+      .style("opacity", 1)
+      .style("top", d3.event.y + "px")
+      .style("left", d3.event.x + "px")
+      .html(`${d.state}: ${d.total}`);
+}
 
-
-// Adding LIs to a UL
-// d3.select('ul')
-//     .selectAll('li')
-//       .data(todos)
-//       .enter()
-//     .append('li')
-//       .text(function(d,i) {
-//           return "Todo #" + (i + 1) + ": " + d;
-//       });
-
- // blah = d3.selectAll('p')
- //      .data([4,8,12,16,20,24,28,32,36,40])
- //      .style('font-size', (d) => d + 'px');
-
-
-// Some older ideas
-
-// document.addEventListener("DOMContentLoaded", main);
-
-// function main() {
-//   var firstSelection = d3.select("#page-title")
-//   var firstLi = d3.select("ol")
-//                   .select("li");
-//   var allLi = d3.select("ol")
-//                   .selectAll("li");                
-
-//   d3.select("#page-title")
-//       .style("color", "blue")
-//       .attr("class", "intro");
-
-//   d3.selectAll("li")
-//       .classed("items", true);
-
-//   // d3.selectAll("p")
-//   //     .classed("first-paragraph", false)
-//   //     .text("YAY!");
-
-//   d3.selectAll("li")
-//       .text(function() {
-//               return Math.random() + " is a random number!";
-//       });
-
-//   d3.selectAll("li")
-//       .style("background-color", function(d, i) {
-//               if (i % 2 === 1) return "#cccccc";
-//       });
-
-//   d3.selectAll("p")
-//       .classed("first-paragraph", false)
-//        .style("color", function() {
-//         if (Math.random() < 0.5) {
-//           return "red";
-//         } else {
-//           return "blue";
-//         }
-//       });
-
-//   d3.select("p").remove();
-//   d3.selectAll("li")
-//       .append("hr");
-//   d3.select("body")
-//       .insert("hr", "h1");
-
-//   d3.select("h1").on('mouseover', function() {
-//         console.log(d3.event);
-//   });
-
-//   d3.selectAll("li").on('click', function() {
-//         var randomRed = Math.floor(Math.random() * 256);
-//         var randomBlue = Math.floor(Math.random() * 256);
-//         var randomGreen = Math.floor(Math.random() * 256);
-//         var randomColor = "rgb("+randomRed+","+randomBlue+","+randomGreen+")";
-//         d3.select(this).style('color', randomColor);
-//   });
-
-//   d3.select('body')
-//     .append("svg")
-//       .attr("width", 500)
-//       .attr("height", 500);
-
-//   d3.select('svg')
-//     .append('rect')
-//       .attr('width', 100)
-//       .attr('height', 200)
-//       .attr('x', 50)
-//       .attr('y', 150)
-//       .attr('fill', 'red')
-//       .attr('stroke-width', 5)
-//       .attr('stroke', 'blue');
-
-//   d3.select('svg')
-//     .append('circle')
-//       .attr('cx', 250)
-//       .attr('cy', 200)
-//       .attr('r', 100)
-//       .attr('fill', 'purple');
-
-//   // debugger;
-// }
-
-
-
-
-
-
-
+// hide the tooltip when a bar is moused off
+function hideToolTip(d) {
+  d3.select(".tooltip")
+      .style("opacity", 0);
+}

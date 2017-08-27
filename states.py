@@ -5,7 +5,7 @@ states = {
         'Arizona': 'AZ',
         'California': 'CA',
         'Colorado': 'CO',
-        'Connecticut': 'CO',
+        'Connecticut': 'CT',
         'Delaware': 'DE',
         'Florida': 'FL',
         'Georgia': 'GA',
