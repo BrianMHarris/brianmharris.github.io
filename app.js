@@ -82,7 +82,7 @@ function initializeChart(year) {
   var counter = 0; // creates ids for the states for later use
   var yearTotal = 0;
   
-  d3.csv(`data/${year}.csv`, function(d) {
+  d3.csv(`/data/${year}.csv`, function(d) {
     d.id = counter++;
     d.abbr = states[d.state];
     d.total = +d.total;
