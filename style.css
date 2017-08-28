@@ -10,6 +10,7 @@
   opacity: 0;
   position: absolute;
   pointer-events: none;
+  color: white;
   background-color: black;
   padding: 4px;
 }

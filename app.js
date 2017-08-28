@@ -31,6 +31,7 @@ function main() {
 //  and the total incidents figures
 function readIncidents(state_data) {
   var promises = [];
+  
   for (state in state_data) {
     promises = promises.concat(new Promise(function(resolve, reject) {
       // Grab the name of the current state with closure!
@@ -168,8 +169,8 @@ function updateSlider(value) {
 function showToolTip(d) {
   d3.select(".tooltip")
       .style("opacity", 1)
-      .style("top", d3.event.y + "px")
-      .style("left", d3.event.x + "px")
+      .style("top", (d3.event.y - 5) + "px")
+      .style("left", (d3.event.x + 10)+ "px")
       .html(`${d.state}: ${d.total}`);
 }
 
